@@ -1,41 +1,19 @@
-#📊 Customer Satisfaction in Brazilian Mobile Telecom using Machine Learning
-This project applies machine learning techniques to analyze customer satisfaction in Brazilian mobile telecommunications, using official data from ANATEL (Brazil’s National Telecommunications Agency). The study investigates which factors most influence satisfaction, focusing on users rated as "neutral" by the Net Promoter Score (NPS).
+Customer Satisfaction in Brazilian Mobile Telecom using Machine Learning
+This project analyzes customer satisfaction in Brazil's mobile telecommunications sector using machine learning techniques and data from ANATEL (National Telecommunications Agency). The goal is to identify key factors that influence customer satisfaction, especially among "neutral" users according to the Net Promoter Score (NPS).
 
-📁 Dataset
-The dataset used is an ANATEL customer satisfaction survey, pre-processed and stored in an Excel file (BaseProcessadaNova.xlsx).
+Dataset
+The dataset used in this project is a pre-processed customer satisfaction survey provided by ANATEL and stored in BaseProcessadaNova.xlsx.
 
-Main Features:
-Brand (MARCA)
+Objectives
+Predict customer satisfaction based on survey responses.
 
-State (ESTADO)
+Compare multiple classification algorithms.
 
-Quality of Internet and Voice Services (QF1_2, QF1_3, QF1_5, QF2_1, QIC1)
+Identify the most important factors affecting satisfaction.
 
-Customer Experience (PU1 to PU4)
+Focus on the role of internet speed and stability in user experience.
 
-Satisfaction Indexes (P2, P2a, P4, P6)
-
-Socioeconomic Data (ID1 to ID5)
-
-Target variable: NPS
-
-📌 Objectives
-Identify the most important attributes affecting mobile telecom satisfaction.
-
-Compare multiple classification models to predict NPS categories (Satisfied vs. Unsatisfied).
-
-Analyze feature importance using decision trees and Random Forests.
-
-⚙️ Technologies and Libraries
-Python 3.x
-
-Pandas, NumPy, Matplotlib, Seaborn
-
-Scikit-learn (classification models, metrics, preprocessing, model tuning)
-
-Missingno (missing data visualization)
-
-🔍 Models Compared
+Models Used
 Logistic Regression
 
 K-Nearest Neighbors (KNN)
@@ -48,54 +26,53 @@ Support Vector Machine (SVM)
 
 Random Forest
 
-📈 Evaluation Metrics
-Accuracy
+Evaluation
+Accuracy Score
 
 Confusion Matrix
 
 Classification Report
 
-Cross-validation (10-fold)
+10-fold Cross-validation
 
-GridSearchCV (hyperparameter tuning)
+Hyperparameter tuning using GridSearchCV
 
-🧠 Key Findings
-Random Forest achieved the best predictive performance.
+Key Findings
+The Random Forest algorithm showed the best predictive performance.
 
-Internet speed and stability were the most critical factors in customer satisfaction.
+Internet quality (speed and stability) is the most critical factor in customer satisfaction.
 
-Neutral NPS users were important to analyze for better retention strategies.
+Analyzing neutral NPS users can provide insights for improving service retention.
 
-📊 Visualizations
-Feature importance via bar plots
+Visualizations
+Feature importance graphs
 
-Heatmaps of feature correlations
+Correlation heatmaps
 
-Histograms of feature distributions
+Histograms of variables
 
-Boxplots comparing model accuracy
+Boxplots for model comparison
 
-▶️ How to Run
-Clone the repository:
+How to Run
+Clone the repository
 
-bash
-Copiar
-Editar
-git clone https://github.com/yourusername/telecom-satisfaction-ml.git
-cd telecom-satisfaction-ml
-Install dependencies:
+Place the dataset in the specified path
 
-bash
-Copiar
-Editar
-pip install -r requirements.txt
-Run the Jupyter notebook or Python script.
+Run the Jupyter Notebook or Python scripts in your environment
 
-📌 Notes
-This project is focused on educational and exploratory purposes.
+Dependencies
+pandas
 
-Data must be manually placed at the expected path (BaseProcessadaNova.xlsx).
+numpy
 
-📬 Contact
-Feel free to reach out via LinkedIn or open an issue in the repository.
+matplotlib
 
+seaborn
+
+scikit-learn
+
+missingno
+
+Author
+Developed by Luiz Gonzaga Lacerda de Ataíde Neto
+For educational and research purposes.
